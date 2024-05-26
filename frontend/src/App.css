@@ -1,0 +1,42 @@
+.ProName {
+  width: 20px;
+
+}
+
+.custom-dropdown {
+  height: 160px;
+  overflow-y: auto;
+}
+
+body {
+  background-color: rgb(215, 212, 212);
+}
+
+.CustomItemBody {
+  background-color: rgb(215, 212, 212);
+  border: 2px solid black;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.about-heading {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 18px;
+  color: #666;
+  max-width: 600px;
+  text-align: center;
+}
+
