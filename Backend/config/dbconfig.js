@@ -4,7 +4,7 @@ module.exports = {
     PASSWORD : "Root@123",
     DB : "pictsport",
     dialect : "mysql",
-    // pool:{
+        // pool:{
     //     max:5,  //maximum devices
     //     min:0,
     //     acquire : 30000, //time in second for which database required

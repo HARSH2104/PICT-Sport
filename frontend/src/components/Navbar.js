@@ -306,7 +306,10 @@ export default function Navbar(props) {
     );
     let res = await fetchRes.json();
     if (res.err) {
-      alert(res.err);
+      props.showAlert(res.err,"danger");
+    }
+    else{
+      props.showAlert("Account Created Successfully","success");
     }
   };
 

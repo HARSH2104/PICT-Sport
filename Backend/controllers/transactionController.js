@@ -1,7 +1,5 @@
 const db = require("../models/server");
-const { Queue } = require("bullmq");
 
-const messageQueue = new Queue("mail-queue");
 
 const addTransaction = async (req, res) => {
   let transac = {
@@ -70,12 +68,6 @@ const addTransaction = async (req, res) => {
     },
   });
 
-  await messageQueue.add("mail", {
-    reg_id: req.body.registration_id,
-    itemName: req.body.itemName,
-    quantity: req.body.quantity,
-    email: finduser.email,
-  });
 
   res.status(201).send({ msg: "booking done" });
 };
